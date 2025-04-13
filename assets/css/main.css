@@ -1,0 +1,7 @@
+:root{
+    --secondary-color: #f57600;
+    --secondary-color: #f57600;
+}
+.secondary-standout{
+    color: var(--secondary-color);
+}
