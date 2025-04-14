@@ -1192,7 +1192,7 @@ header a:hover,
 }
 .dropdown-toggle::after,.dropdown-toggler::after {
 	border: 0 none;
-	content: "ï";
+	content: "\f3d0";
 	font-family: ionicons;
 	height: auto;
 	line-height: normal;
