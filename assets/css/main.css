@@ -5,3 +5,45 @@
 .secondary-standout{
     color: var(--secondary-color);
 }
+.hero-sec{
+    background-image: url(/assets/images/background.jpg);
+}
+
+.header_wrap{
+    background-color: #00000026;
+}
+
+
+.gaped-row{
+    gap: 4rem;
+}
+
+.title_default_light.title_border h4::before {
+	background-color: #f57600;
+}
+.btn-center{
+    display: block;
+    margin-inline: auto;
+}
+
+.footer-logo{
+    font-size: 1.5rem;
+}
+
+.owl-dots{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+}
+.owl-dot{
+    background-color: orange;
+    height: 5px;
+    width: 20px;
+}
+.owl-dot.active{
+    background-color: red;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{border: none;}
+.btn-fit{width: fit-content;}
