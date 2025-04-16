@@ -340,24 +340,29 @@ Version      : 1.6
 	/*===================================*
 	07. TESTIMONIAL SLIDER JS
 	*===================================*/	 
-	$('.testimonial_slider').owlCarousel({
-	     loop: false,
-	     margin: 30,
-	     nav: false,
+	$('.testimonies-carou').owlCarousel({
+	     loop: true,
+		 center: true,
+	     margin: 10,
+	     nav: true,
 		 dots: true,
 		 autoHeight:true,
+
+		 autoplay:true,
+		 autoplayTimeout:1000,
+		 autoplayHoverPause:true,
 	     responsive: {
 	         0: {
 	             items: 1,
 	         },
 	         768: {
-	             items: 1,
-	         },
-	         1000: {
 	             items: 2,
 	         },
+	         1000: {
+	             items: 3,
+	         },
 	         1199: {
-	             items: 2
+	             items: 3,
 	         }
 	     }
 	 });
