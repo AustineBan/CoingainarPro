@@ -8,10 +8,16 @@
 .secondary-standout{
     color: var(--secondary-color);
 }
+.centered-row{
+    justify-content: center;
+}
 .hero-sec{
     background-image: url(/assets/images/background.jpg);
 }
-
+header:has(.navbar-collapse.show){
+    background-color: #262d4e;
+    padding-bottom: 0px;
+}
 .header_wrap{
     background-color: #00000026;
 }
@@ -132,7 +138,7 @@ table.center{
 
 
 .each-testimony{
-    min-width: min(450px, 80%);
+    min-width: min(450px, 90%);
     min-height: 200px;
     display: grid;
     place-items: center;
@@ -163,4 +169,70 @@ table.center{
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.each-plan ul{
+    list-style-position: inside;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.each-plan li{
+    position: relative;
+    width: fit-content;
+}
+
+.each-plan li::before {
+    content: "\2714"; /* check mark */
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.plan-item{
+    padding: 2.5rem 0px
+}
+.plan-item-title{
+    font-size: 2rem;
+    color: white;
+}
+.plan-item-sec-title{
+    background-color: #00000026;
+    width: 100%;
+    padding-block: 20px;
+    margin-block: 15px;
+}
+
+
+.centralized-bg-img-token{
+    height: 250px;
+    background-color: red;
+}
+
+
+@media (max-width: 680px){
+    .footer-list-con h4{
+        text-align: center;
+        padding: 0;
+        color: #f57600;
+    }
+    .footer-list-con h4::before{
+        display: none;
+    }
+    .footer-list-con a{
+        width: fit-content;
+        display: block;
+        margin-inline: auto;
+        text-align: center;
+    }
 }

@@ -346,18 +346,19 @@ Version      : 1.6
 		 stagePadding: 30,
 	     margin: 10,
 	     nav: true,
+		 navText: ['<i class="ion-ios-arrow-back"></i>', '<i class="ion-ios-arrow-forward"></i>'],
 		 dots: true,
 		 autoHeight:true,
 
-		 autoplay:true,
+		 /* autoplay:true,
 		 autoplayTimeout:4000,
 		 smartSpeed: 1000,
-		 autoplayHoverPause:true,
+		 autoplayHoverPause:true, */
 	     responsive: {
 	         0: {
 	             items: 1,
-				 margin: 90,
-				 width: "200",
+				 margin: 25,
+				 width: 500,
 	         },
 	         768: {
 	             items: 2,
