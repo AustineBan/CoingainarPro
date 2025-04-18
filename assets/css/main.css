@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 :root{
     --secondary-color: #f57600;
     --secondary-color: #f57600;
@@ -13,6 +16,9 @@
     background-color: #00000026;
 }
 
+section{
+    margin-block: calc(3rem + 0.5vw);
+}
 
 .gaped-row{
     gap: 4rem;
@@ -47,3 +53,114 @@
 
 .owl-theme .owl-dots .owl-dot.active span{border: none;}
 .btn-fit{width: fit-content;}
+div.center{
+    margin-inline: auto;
+}
+
+table.center{
+    margin-inline: auto;
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+
+#transaction table{
+    overflow-y: auto;
+    max-height: 200px;
+    height: 200px;
+}
+
+
+.transaction-table {
+    width: 90%;
+    border-collapse: collapse;
+    text-align: left;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-inline: auto;
+    margin-block: 1rem 3rem;
+}
+  
+.transaction-table thead,.transaction-table tbody {
+    display: block;
+    width: 100%;
+}
+  
+.transaction-table tbody {
+    height: 200px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    color: white;
+}
+.white-text{
+    color: white;
+}
+  
+.transaction-table tr {
+    padding: 3rem;
+    font-size: 1rem;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.transaction-table thead tr{
+    border-bottom: 1px solid white;
+    background-color: #181839;
+}
+.transaction-table tbody tr{
+    border-top: 1px solid #606060;
+}
+.transaction-table td,.transaction-table th{
+    padding-block: 15px;
+}
+.transaction-table td:nth-child(1), 
+.transaction-table th:nth-child(1)
+{padding-left: 15px;}
+
+.transaction-table td:nth-child(2),
+.transaction-table th:nth-child(2)
+{padding-right: 15px; text-align: right;}
+
+.positive-table td:nth-child(2){
+    color: green;
+}
+
+.negative-table td:nth-child(2){
+    color: red;
+}
+
+
+.each-testimony{
+    min-width: min(450px, 80%);
+    min-height: 200px;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: 2px solid red;
+}
+.each-testimony blockquote{
+    margin-bottom: 0;
+}
+.testi-user-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: calc(25px + 0.9vw);
+}
+.each-testimony .testi-user-cont .testi-user-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+
+#testimonies .owl-nav{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

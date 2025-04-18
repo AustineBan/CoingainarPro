@@ -92,7 +92,7 @@ Version      : 1.6
     });
 	
 	//Main navigation Active Class Add Remove
-	$('.navbar-toggler').on('click', function() {
+	/* $('.navbar-toggler').on('click', function() {
 		$("header").toggleClass("active");
 	});	
 	$(document).on("ready", function () {
@@ -104,7 +104,7 @@ Version      : 1.6
 			$("header").removeClass("active");
 		}
 	})
-	})
+	}) */
 	
 	//Language Select Dropdown
 	$(document).ready(function() {
@@ -313,7 +313,7 @@ Version      : 1.6
 	/*===================================*
 	06. BLOG SLIDER S
 	*===================================*/
-	 $('.blog_slider').owlCarousel({
+	 /* $('.blog_slider').owlCarousel({
 	     loop: false,
 	     margin: 30,
 	     nav: false,
@@ -335,7 +335,7 @@ Version      : 1.6
 	             items: 3
 	         }
 	     }
-	 });
+	 }); */
 	 
 	/*===================================*
 	07. TESTIMONIAL SLIDER JS
@@ -343,26 +343,33 @@ Version      : 1.6
 	$('.testimonies-carou').owlCarousel({
 	     loop: true,
 		 center: true,
+		 stagePadding: 30,
 	     margin: 10,
 	     nav: true,
 		 dots: true,
 		 autoHeight:true,
 
 		 autoplay:true,
-		 autoplayTimeout:1000,
+		 autoplayTimeout:4000,
+		 smartSpeed: 1000,
 		 autoplayHoverPause:true,
 	     responsive: {
 	         0: {
 	             items: 1,
+				 margin: 90,
+				 width: "200",
 	         },
 	         768: {
 	             items: 2,
+				 margin: 40,
 	         },
 	         1000: {
 	             items: 3,
+				 margin: 40,
 	         },
 	         1199: {
 	             items: 3,
+				 margin: 90,
 	         }
 	     }
 	 });
