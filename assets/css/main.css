@@ -56,8 +56,8 @@ section{
     border-radius: 50%;
 }
 .owl-dot.active{
-    background-color: #cf3207;
-    border-color: #dddddda8;
+    background-color: #dedede;
+    border-color: #cf3207;
 }
 
 .owl-theme .owl-dots .owl-dot.active span{border: none;}
@@ -146,7 +146,7 @@ table.center{
     display: grid;
     place-items: center;
     padding: 10px;
-    border: 2px solid red;
+    background-color: #121833;
 }
 .each-testimony blockquote{
     margin-bottom: 0;
@@ -158,20 +158,51 @@ table.center{
     text-align: left;
     margin-top: calc(25px + 0.9vw);
 }
+.testi-user-cont h4{
+    color: #ffffffd3;
+}
+.testi-user-cont p{
+    color: #ffffff89;
+}
 .each-testimony .testi-user-cont .testi-user-img{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 1px solid red;
+    border: 1px solid rgba(255, 255, 255, 0.566);
     padding: 5px;
 }
 
 
 #testimonies .owl-nav{
-    background-color: red;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 20px;
+}
+#testimonies .owl-nav .owl-prev, #testimonies .owl-nav .owl-next{
+    background-color: #ffffff31;
+    border-radius: 8px;
+    padding: 5px 15px;
+    color: white;
+    font-weight: bold;
+    aspect-ratio: 1/1;
+    height: auto;
+}
+#testimonies .owl-nav .owl-prev:hover,
+#testimonies .owl-nav .owl-next:hover{
+    background-color: #ffffff8e;
+}
+#plans h3{
+    color: #f57600;
+}
+
+.live-investment-table-title{
+    color: white;
+    font-weight: bolder;
+}
+.each-plan{
+    margin-bottom: calc(2rem + 1vw);
+    max-width: min(90%, 450px);
 }
 
 .each-plan ul{
@@ -190,8 +221,9 @@ table.center{
     justify-content: space-between;
     padding: 10px var(--padding) 10px  calc(var(--padding) + 20px + 10px);
 }
+
 .each-plan li span:nth-child(2){
-    background-color: white;
+    color: #e7e7e7;
 }
 .each-plan li::before {
     content: "\2714"; /* check mark */
@@ -227,8 +259,28 @@ table.center{
     height: 250px;
     background-color: red;
 }
+.blog_slider{
+    justify-content: center;
+}
+.blog_slider .item{
+    min-width: 300px;
+}
 
-
+.transac-t-body tr{
+    animation-name: slideinright;
+    animation-duration: 3s;
+}
+.second-tbody tr{
+    animation-name: slideinleft;
+}
+@keyframes slideinright {
+    from{transform: translate(-400px);}
+    to{transform: translate(0px);}
+}
+@keyframes slideinleft {
+    from{transform: translate(400px);}
+    to{transform: translate(0px);}
+}
 @media (max-width: 680px){
     .footer-list-con h4{
         text-align: center;
